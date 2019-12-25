@@ -387,9 +387,9 @@ decodePrefsData ()
  ***************************************************************************/
 void FixInvalidSettings()
 {
-	if(GCSettings.LoadMethod > 6)
+	if(GCSettings.LoadMethod > 7)
 		GCSettings.LoadMethod = DEVICE_AUTO;
-	if(GCSettings.SaveMethod > 6)
+	if(GCSettings.SaveMethod > 7)
 		GCSettings.SaveMethod = DEVICE_AUTO;	
 	if(!(GCSettings.zoomHor > 0.5 && GCSettings.zoomHor < 1.5))
 		GCSettings.zoomHor = 1.0;
